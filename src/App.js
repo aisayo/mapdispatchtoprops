@@ -1,13 +1,29 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux'
+
+import addStudent from './actions/studentActions'
 
 class App extends Component {
+
+    handleClick = () => {
+        this.props.dispatch({type: 'ADD_STUDENT', payload: 'Aysan'})
+    }
     render() {
+        console.log(this.props)
         return (
             <div>
-                Hello World!
+                <button onClick={this.handleClick}>Click</button>
             </div>
         );
     }
 }
 
-export default App;
+const mapStateToProps = state => {
+    return {
+        students: state.students
+    }
+}
+
+
+
+export default connect(mapStateToProps)(App);
