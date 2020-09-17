@@ -32,4 +32,3 @@
 - Second argument to `connect()`
 - Dispatches action to the store
 - When connect calls this function, passes in `dispatch` as an argument
-- 
