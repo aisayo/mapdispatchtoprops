@@ -24,6 +24,14 @@ const mapStateToProps = state => {
     }
 }
 
+function mapDispatchToProps(dispatch, ownProps) {
+    debugger;
+    return {
+
+    }
+
+}
 
 
-export default connect(mapStateToProps)(App);
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
