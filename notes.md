@@ -40,3 +40,7 @@
 - Encapsulates logic of talking to Redux store
 - Two ways to utilize mapDispatchToProps: function or object
 - Functions are better to use for customization but object is simpler
+
+## Resources
+
+- [mapDispatchToProps](https://react-redux.js.org/using-react-redux/connect-mapdispatch)
