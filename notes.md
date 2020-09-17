@@ -26,6 +26,8 @@
 
 - Dispatch function is a store method
 - The only way to trigger a state change
+- Provided to store as a method 
+- Component by default has access to dispatch through props when connected
 
 # MapDispatchToProps
 
